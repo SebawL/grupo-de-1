@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+    int multiplicador = 0;
+    string secuencia;
+
+    for (int i = 1; i <= 9; ++i) {
+        multiplicador = multiplicador * 10 + i;
+        secuencia += to_string(multiplicador) + "x9+" + to_string(i) + " = ";
+
+          int resultado = multiplicador * 9 + i;
+
+               string parte1;
+        for (int j = 0; j < i; ++j) {
+            parte1 += "1";
+        }
+
+      
+        secuencia += parte1 + " = " + to_string(resultado) + "\n";
+    }
+
+        cout << secuencia;
+
+    return 0;
+}
