@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int lastDigits(int num) {
+    int power = pow(num, num);
+    if (power < 100)         return power;
+    else 
+        return power % 100;
+}
+
+int main() {
+    int n;
+    cout << "Ingrese la cantidad de términos de la secuencia a generar: ";
+    cin >> n;
+
+    cout << "La secuencia es: ";
+    for (int i = 1; i <= n; ++i) {
+        cout << lastDigits(i) << " ";
+    }
+
+    return 0;
+}
+
+
+//este nolo encontramos, fue muy dificil

@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n = 1; 
+    int sumaResta = 1; 
+    for (int i = 0; i < 10; ++i) {  
+        cout << n << " ";
+        if (sumaResta == 1) { 
+            n = n + 4;
+            sumaResta = -1; 
+        } else {  
+            n = n - 2;
+            sumaResta = 1; 
+        }
+    }
+    return 0;
+}
